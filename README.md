@@ -23,6 +23,10 @@ Once you have two builds, and a reproducer and the link command, edit
 `reproducer.sh` to use your reproducer. Do the same for `relink_jvm.sh`. You
 can find the link command from the build.log of an OpenJDK build.
 
+OpenJDK 9's build system uses a file with absolute paths for the object files.
+One way to make `relink_jvm.sh` work taken from the `build.log` is to make paths
+relative in the file-list file.
+
 Then invoke the main script like this:
 
     BAD_HOTSPOT=/path/to/bad/hotspot/ \

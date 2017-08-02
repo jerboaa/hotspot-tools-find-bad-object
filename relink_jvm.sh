@@ -1,1 +1,1 @@
-reproducers/rhbz_1423751/relink_jvm.sh
+reproducers/ppc32_zero_jdk9/relink_jvm.sh

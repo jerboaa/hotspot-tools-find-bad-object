@@ -26,11 +26,18 @@ GOOD_HOTSPOT=/path/to/good/hostpot/ \\
 JDK_IMAGE=/path/to/jdk-image \\
 $0
 
-Example:
+Example OpenJDK 8:
 
 BAD_HOTSPOT=$(pwd)/bad/build/hotspot/linux_amd64_compiler2/fastdebug/ \\
 GOOD_HOTSPOT=$(pwd)/good/build/hotspot/linux_amd64_compiler2/fastdebug/ \\
 JDK_IMAGE=$(pwd)/good/build/images/j2sdk-image/ \\
+$0
+
+Example OpenJDK 9:
+
+BAD_HOTSPOT=$(pwd)/build/linux-ppc-normal-zero-fastdebug/bad-hotspot/variant-zero/libjvm/objs/ \\
+GOOD_HOTSPOT=$(pwd)/build/linux-ppc-normal-zero-fastdebug/hotspot/variant-zero/libjvm/objs/ \\
+JDK_IMAGE=$(pwd)/build/linux-ppc-normal-zero-slowdebug/images/jdk/ \\
 $0
 
 Where BAD_HOTSPOT fails the reproducer and GOOD_HOTSPOT passes the
