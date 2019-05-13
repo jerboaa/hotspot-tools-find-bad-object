@@ -1,1 +1,1 @@
-reproducers/ppc32_zero_jdk9/reproducer.sh
+reproducers/i686-jdk11-rhbz1683095/reproducer.sh

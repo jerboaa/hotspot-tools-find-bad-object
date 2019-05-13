@@ -1,1 +1,1 @@
-reproducers/ppc32_zero_jdk9/relink_jvm.sh
+reproducers/i686-jdk11-rhbz1683095/relink_jvm.sh
